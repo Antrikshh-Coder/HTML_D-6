@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework - Padding, Margin, and Flexbox</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .with-padding {
+      padding: 20px;
+      background-color: lightgreen;
+    }
+    .with-margin {
+      margin: 20px;
+      background-color: lightsalmon;
+    }
+    .label {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Homework - IMP</h1>
+
+<p>
+  - ❗ <strong>What changes</strong> when you apply <code>padding</code>, <code>margin</code>, or <code>flex</code><br>
+  - 🔍 Clear <strong>before/after comparisons</strong><br>
+  - ✅ Small <strong>try-it-yourself</strong> tweaks
+</p>
+
+<h2>🔷 Practice Set 1: <code>padding</code> (Space Inside the Element)</h2>
+
+<section>
+  <h3>🔹 Practice 1.1: Basic Padding Box</h3>
+  
+  <div style="padding: 20px; background-color: lightblue;">
+    This box has 20px padding on all sides.
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Change it to <code>padding: 10px 30px;</code> and see what happens.</p>
+</section>
+
+<section>
+  <h3>🔹 Practice 1.2: Padding for a Button</h3>
+  
+  <button style="padding: 10px 20px;">Click Me</button>
+  
+  <p>✅ <strong>Try:</strong> Make the button look more clickable with extra padding.</p>
+</section>
+
+<section>
+  <h3>🔹 Practice 1.3: Different Padding Sides</h3>
+  
+  <div style="padding-top: 30px; padding-left: 10px; background: peachpuff;">
+    Top padding is more!
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Use <code>padding: 30px 10px 5px 0;</code> (top, right, bottom, left)</p>
+</section>
+
+<h2>🔷 Practice Set 2: <code>margin</code> (Space Outside the Element)</h2>
+
+<section>
+  <h3>🔹 Practice 2.1: Margin Between Two Boxes</h3>
+  
+  <div style="margin-bottom: 20px; background: lavender; padding: 10px;">
+    First box
+  </div>
+  <div style="background: thistle; padding: 10px;">Second box</div>
+  
+  <p>✅ <strong>Try:</strong> Adjust <code>margin-bottom</code> and see spacing change.</p>
+</section>
+
+<section>
+  <h3>🔹 Practice 2.2: Auto Margin Centering</h3>
+  
+  <div style="width: 200px; margin: auto; background: lightgreen; padding: 10px;">
+    Centered Box
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Add a border to see the actual size.</p>
+</section>
+
+<section>
+  <h3>🔹 Practice 2.3: Margin on All Sides</h3>
+  
+  <p style="margin: 30px; background: mistyrose; padding: 10px;">
+    Margins make room outside the element.
+  </p>
+  
+  <p>✅ <strong>Try:</strong> Use margin like <code>30px 10px</code> or <code>0 auto</code>.</p>
+</section>
+
+<h2>🔷 Practice Set 3: <code>flexbox</code> (Smart Layouts)</h2>
+
+<section>
+  <h3>🔹 Practice 3.1: Simple Horizontal Layout</h3>
+  
+  <div style="display: flex; gap: 10px;">
+    <div style="background: lightcoral; padding: 20px;">Box 1</div>
+    <div style="background: lightseagreen; padding: 20px;">Box 2</div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Add more boxes. Try <code>justify-content: space-between;</code></p>
+</section>
+
+<section>
+  <h3>🔹 Practice 3.2: Centering with Flex</h3>
+  
+  <div style="display: flex; justify-content: center; align-items: center; height: 100px; background: lightyellow;">
+    <div style="background: tomato; padding: 20px;">Centered</div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Change <code>align-items: flex-start</code> or <code>flex-end</code></p>
+</section>
+
+<section>
+  <h3>🔹 Practice 3.3: Responsive Columns</h3>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <div style="flex: 1 1 200px; background: skyblue; padding: 20px;">Column 1</div>
+    <div style="flex: 1 1 200px; background: lightpink; padding: 20px;">Column 2</div>
+    <div style="flex: 1 1 200px; background: lightgray; padding: 20px;">Column 3</div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Resize the screen to see them wrap.</p>
+</section>
+
+<h2>✅ Advanced Yet Visual Concept Practice: <strong>Padding vs Margin vs Flex</strong></h2>
+
+<p>
+  Each section below has:<br>
+  - 🔹 A visual box<br>
+  - ✍️ Labels inside or around<br>
+  - 🔄 Easy to customize
+</p>
+
+<section>
+  <h3>🔷 🔍 Section 1: Padding vs Margin – Side-by-Side Demo</h3>
+  
+  <div class="container">
+    <div>
+      <div class="label">Padding</div>
+      <div class="box with-padding">Inside spacing (padding)<br>pushes content inward</div>
+    </div>
+  
+    <div>
+      <div class="label">Margin</div>
+      <div class="box with-margin">Outside spacing (margin)<br>pushes elements away</div>
+    </div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong> Change padding to <code>50px</code> or margin to <code>0px</code> to compare effect.</p>
+</section>
+
+<section>
+  <h3>🔷 🔄 Section 2: Padding + Margin Together</h3>
+  
+  <div style="padding: 30px; margin: 30px; background: lightcoral; color: white; width: 300px;">
+    Padding gives inner space. <br>
+    Margin gives outer space. <br><br>
+    🧠 Use Dev Tools to see the box model!
+  </div>
+  
+  <p>✅ <strong>Challenge:</strong> Remove padding or margin — what happens to content vs. spacing?</p>
+</section>
+
+<section>
+  <h3>🔷 ⚙️ Section 3: Flexbox Behavior</h3>
+  
+  <div style="display: flex; justify-content: space-between; background: #eee; padding: 10px;">
+    <div style="background: lightpink; padding: 20px;">Flex Child 1</div>
+    <div style="background: lightblue; padding: 20px;">Flex Child 2</div>
+    <div style="background: lightgreen; padding: 20px;">Flex Child 3</div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong></p>
+  <ul>
+    <li>Change <code>justify-content</code> to <code>center</code>, <code>space-around</code>, etc.</li>
+    <li>Add <code>align-items: center</code> with <code>height: 200px</code></li>
+  </ul>
+</section>
+
+<section>
+  <h3>🔸 📘 Key Concepts Summary Table</h3>
+  
+  <table border="1" style="border-collapse: collapse; width: 100%;">
+    <tr>
+      <th>Property</th>
+      <th>Affects</th>
+      <th>Moves?</th>
+      <th>Acts On</th>
+      <th>Common Use</th>
+    </tr>
+    <tr>
+      <td><code>padding</code></td>
+      <td>Inner space</td>
+      <td>Inside the element</td>
+      <td>Content</td>
+      <td>Button sizing, text box, spacing inside cards</td>
+    </tr>
+    <tr>
+      <td><code>margin</code></td>
+      <td>Outer space</td>
+      <td>Around the element</td>
+      <td>Surrounding area</td>
+      <td>Pushing items apart, centering blocks</td>
+    </tr>
+    <tr>
+      <td><code>display: flex</code></td>
+      <td>Layout</td>
+      <td>Item arrangement</td>
+      <td>Children of container</td>
+      <td>Build horizontal/vertical responsive layouts</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h3>🚀 Bonus: Visual Challenge Task</h3>
+  
+  <div style="display: flex; justify-content: center; align-items: center; height: 200px; background: #f1f1f1;">
+    <div style="margin: 50px; padding: 30px; background: darkslateblue; color: white;">
+      Challenge Box<br>
+      Has both padding & margin
+    </div>
+  </div>
+  
+  <p>✅ <strong>Try:</strong></p>
+  <ul>
+    <li>Remove <code>margin</code> only – what changes?</li>
+    <li>Remove <code>padding</code> – how does the text behave?</li>
+  </ul>
+</section>
+
+</body>
+</html>

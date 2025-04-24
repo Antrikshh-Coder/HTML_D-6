@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS Beginner Practice Guide</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --primary-light: #e8f5e9;
+            --primary-dark: #474845;
+            --secondary-color: #03A9F4;
+            --text-color: #333;
+            --light-text: #fff;
+            --background: #f9f9f9;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        nav {
+            background-color: var(--primary-dark);
+            color: var(--light-text);
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--box-shadow);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        p {
+            margin: 15px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.2s ease;
+        }
+
+        p:hover {
+            transform: translateY(-5px);
+        }
+
+        h3 {
+            padding: 15px 0;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+        }
+
+        section {
+            padding: 20px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: var(--primary-dark);
+            color: var(--light-text);
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .banner p1 {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .practice-box {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+            background-color: var(--primary-light);
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            display: block;
+            box-shadow: var(--box-shadow);
+        }
+
+        .demo-box {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .demo-box:hover {
+            transform: scale(1.02);
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            min-width: 150px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+            box-shadow: var(--box-shadow);
+        }
+
+        .centered-box {
+            text-align: center;
+            border: 2px dashed var(--primary-color);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-weight: 500;
+            background-color: var(--primary-light);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="banner">
+                <div style="display: flex; justify-content: center;">
+                    <h1>HTML + CSS Beginner Practice Guide</h1>
+                </div>
+                <div style="display: flex; justify-content:center; padding-bottom: 20px;">
+                    <p1>Understand basic HTML tags and CSS properties</p1>
+                </div>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#html">HTML</a></li>
+                        <li><a href="#css">CSS</a></li>
+                        <li><a href="#practice">Practice</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section id="html">
+        <div style="margin: 20px;">
+            <h3 style="border-left: 4px solid var(--primary-color); padding-left: 15px;">📘 HTML Basics</h3>
+        </div>
+        <div>
+            <p><strong>&lt;html&gt;</strong> — Root element that wraps entire HTML document.</p>
+            <p><strong>&lt;head&gt;</strong> — Contains metadata like title, links to CSS, charset.</p>
+            <p><strong>&lt;body&gt;</strong> — Visible part of HTML page.</p>
+            <p><strong>&lt;h1&gt; to &lt;h6&gt;</strong> — Headings. H1 is largest.</p>
+            <p><strong>&lt;p&gt;</strong> — Paragraph text.</p>
+            <p><strong>&lt;div&gt;</strong> — Generic container block.</p>
+            <p><strong>&lt;span&gt;</strong> — Inline container.</p>
+            <p><strong>&lt;a href=""&gt;</strong> — Hyperlink.</p>
+            <p><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> — Unordered, ordered lists and items.</p>
+            <p><strong>&lt;table&gt;</strong> — Table structure with &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</p>
+        </div>
+    </section>
+    <section id="css">
+        <div style="margin: 20px;">
+            <h3 style="border-left: 4px solid var(--primary-color); padding-left: 15px;">🎨 CSS Basics</h3>
+        </div>
+        <div>
+            <p><strong>color:</strong> Changes text color.</p>
+            <p><strong>background-color:</strong> Sets background.</p>
+            <p><strong>padding:</strong> Space inside the element.</p>
+            <p><strong>margin:</strong> Space outside the element.</p>
+            <p><strong>border:</strong> Adds outline around the element.</p>
+            <p><strong>font-size:</strong> Controls text size.</p>
+            <p><strong>text-align:</strong> Aligns text.</p>
+            <p><strong>display:</strong> Controls layout (block, inline, flex).</p>
+            <p><strong>flexbox:</strong> Layout system for flexible items.</p>
+            <p><strong>box-shadow:</strong> Adds shadow around elements.</p>
+        </div>
+    </section>
+    <section id="practice">
+        <div style="margin: 20px;">
+            <h3 style="border-left: 4px solid var(--primary-color); padding-left: 15px;">🧠 Practice Examples</h3>
+        </div>
+        <div>
+            <p1 class="practice-box">Try modifying padding and margin values and observe changes.</p1>
+        </div>
+        <div style="margin: 20px;">
+   
+            <div class="demo-box" style="background-color: #d8f1df;">
+                Box 1: Padding: 20px | Margin: 10px
+            </div>
+
+            <div class="demo-box" style="background-color: #f0d6d6; padding: 15px;">
+                <b>Box 2:</b> Padding: 0 | Margin: 30px
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item" style="background-color: #a8d1e7;">Flex Item 1</div>
+                <div class="flex-item" style="background-color: #a8e7a8;">Flex Item 2</div>
+            </div>
+
+            <div class="practice-box">
+                <p1>Experiment with text-align, font-size, and border-radius</p1>
+            </div>
+
+            <div class="centered-box">
+                Centered and styled text!
+            </div>
+
+            <div class="alert-box">
+                Rounded corner alert box.
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <footer>
+                <p1>Made with ❤️ for Beginners | Practice Makes Perfect!</p1>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
